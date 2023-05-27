@@ -1,4 +1,7 @@
-.test{
-    color:white;
-    text-align: center;
-}
+.map-container {
+    height: 90%;
+    width: 100%;
+  }
+  .map {
+    height: 90vh;
+  }
