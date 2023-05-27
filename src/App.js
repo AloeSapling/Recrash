@@ -2,7 +2,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import About from './components/about';
 import Home from './components/home';
 import Map from './components/map'
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
 import './App.css'
 
 function App() {

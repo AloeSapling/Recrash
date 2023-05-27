@@ -5,7 +5,7 @@ function Home() {
     <div>
        
        <div className='main'>
-            <h1>Home</h1>
+          <img className='w-[1000px] h-[500px]' src="./eco img.jpg" alt="" />
        </div>
     </div>
   );
