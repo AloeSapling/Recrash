@@ -3,5 +3,6 @@
     width: 100%;
   }
   .map {
-    height: 90vh;
+    margin-top: 9vh;
+    height: 100vh;
   }
