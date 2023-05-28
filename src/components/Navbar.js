@@ -20,19 +20,13 @@ const Navbar = () => {
         <img className="w-[243px] h-[85px]" src="./Recrash.png" alt="" />
         <ul className="hidden md:flex">
           <Link to="/" onClick={handleClick}>
-            <li className="p-4 mr-10 text-3xl font-bold cursor-pointer hover:text-[#38761D]">
-              Home
-            </li>
+            <li className="p-4 mr-10 text-3xl font-bold cursor-pointer hover:text-[#38761D]"> Home </li>
           </Link>
           <Link to="/map" onClick={handleClick}>
-            <li className="p-4 mr-10 text-3xl font-bold cursor-pointer hover:text-[#38761D]">
-              Map
-            </li>
+            <li className="p-4 mr-10 text-3xl font-bold cursor-pointer hover:text-[#38761D]">Map</li>
           </Link>
           <Link to="/about" onClick={handleClick}>
-            <li className="p-4 mr-10 text-3xl font-bold cursor-pointer hover:text-[#38761D]">
-              About
-            </li>
+            <li className="p-4 mr-10 text-3xl font-bold cursor-pointer hover:text-[#38761D]"> About</li>
           </Link>
         </ul>
 
@@ -53,22 +47,15 @@ const Navbar = () => {
         >
           <div>
             <img className="w-[260px] h-[96px]" src="./Recrash.png" alt="" />
-
             <ul className="pt-[95px] uppercase z-50">
               <Link to="/" onClick={handleClick}>
-                <li className="pl-4 ml-14 text-3xl border-b border-lime-900 font-bold cursor-pointer hover:text-[#38761D] pt-[0px]">
-                  Home
-                </li>
+                <li className="pl-4 ml-14 text-3xl border-b border-lime-900 font-bold cursor-pointer hover:text-[#38761D] pt-[0px]">Home</li>
               </Link>
               <Link to="/map" onClick={handleClick}>
-                <li className="pl-4 ml-14 text-3xl border-b border-lime-900 font-bold cursor-pointer hover:text-[#38761D] pt-[70px]">
-                  Map
-                </li>
+                <li className="pl-4 ml-14 text-3xl border-b border-lime-900 font-bold cursor-pointer hover:text-[#38761D] pt-[70px]">Map</li>
               </Link>
               <Link to="/about" onClick={handleClick}>
-                <li className="pl-4 ml-14 text-3xl border-b border-lime-900 font-bold cursor-pointer hover:text-[#38761D] pt-[70px]">
-                  About
-                </li>
+                <li className="pl-4 ml-14 text-3xl border-b border-lime-900 font-bold cursor-pointer hover:text-[#38761D] pt-[70px]"> About</li>
               </Link>
             </ul>
           </div>
