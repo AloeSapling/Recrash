@@ -34,7 +34,6 @@
     color: rgb(74, 142, 41);
     font-family: 'Roboto Slab', serif;
     max-width: 500px;
-<<<<<<< HEAD
 }
 
 .dot{
@@ -46,16 +45,4 @@
     height: 50px;
     border-radius: 100px;
     z-index: 10;
-}
-
-.line{
-    position: absolute;
-    top: 30%;
-    left: 7.15%;
-    width: 18px;
-    height: 200px;
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,0.05934873949579833) 0%, rgba(37,116,27,0.89) 100%);
-=======
->>>>>>> 38fd849d10a5f27ed481fe656bc8750629a91a38
 }
