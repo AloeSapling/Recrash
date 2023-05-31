@@ -46,3 +46,15 @@
     border-radius: 100px;
     z-index: 10;
 }
+
+
+.line {
+    position:absolute;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,0.05934873949579833) 0%, rgba(37,116,27,1) 93%);
+    width: 20px;
+    height: 170px;
+    top: 33%;
+    left: 7%;
+    z-index: 10;
+}

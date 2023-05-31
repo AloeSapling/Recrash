@@ -17,7 +17,7 @@ const Hero = () => {
       </div>
       
       <div className="dot"/>
-      <div className="line"/>
+      <div className="line "/>
       
       </>
   );
