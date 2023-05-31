@@ -9,8 +9,16 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "framer-motion": "^10.12.16",
     "maath": "^0.6.0",
+=======
+    "buffer": "^6.0.3",
+    "framer-motion": "^10.12.16",
+    "maath": "^0.6.0",
+    "query-overpass": "^1.5.5",
+    "querystring": "^0.2.1",
+>>>>>>> 39788b5e01a4817c1ea46a2f2383841e87dacb23
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
