@@ -18,6 +18,6 @@ const Sld = () => {
             </Slide>
         </>
      );
-}
+}//adhfuahjfa
  
 export default Sld;
