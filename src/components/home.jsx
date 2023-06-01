@@ -5,7 +5,7 @@ import '../css/home.css'
 import Sld from './Sld.js';
 function Home() {
   return (
-    <div>
+    <div className='  '>
        
        <div className='main'>
          <Hero/>

@@ -5,14 +5,26 @@ import Slide from 'react-reveal/Slide';
 const Sld = () => {
     return ( 
         <>       
+        <div className="w-[100%]">
+            <h1 className="flex justify-center mb-[50px] text-3xl font-bold text-[#3C7339] font-fontik">Dowiedź się więcej o odpadach</h1>
+        </div>
+        <br />
             <Slide left>
-                <div className="w-[60%] h-[150px] bg-[#91C53F] rounded-[45px] ml-[-50px]">
+                <div className="w-[70%] h-[200px] bg-[#91C53F] rounded-[45px] ml-[-50px]">
                     <h1>React Reveal</h1>
                 </div>
             </Slide>
             <div className="h-[70px] bg-white w-[5px]" />
-            <Slide right>
-                <div className=" flex justify-end w-[60%] h-[150px] bg-[#7CAA29] rounded-[45px] ml-[-50px]">
+            <Slide right className=" ">
+            <div className="flex justify-end">
+                <div className="w-[70%] h-[200px] bg-[#7CAA29] rounded-[45px] mr-[-50px]">
+                     <h1>React Reveal</h1>
+                </div>
+            </div>
+            </Slide>
+            <div className="h-[70px] bg-white w-[5px]" />
+            <Slide left>
+                <div className="w-[70%] h-[200px] bg-[#3C7339] rounded-[45px] ml-[-50px]">
                     <h1>React Reveal</h1>
                 </div>
             </Slide>
