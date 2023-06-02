@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
     fontFamily: {
-      'fontik': ['Merriweather', 'serif']
+      'fontik': ['Merriweather', 'serif'],
+      'playfire': ['Playfair Display', 'serif;']
     },
   },
 },
