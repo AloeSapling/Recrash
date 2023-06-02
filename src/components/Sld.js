@@ -12,11 +12,11 @@ const Sld = () => {
         </Slide>
         <br />
             <Slide left>
-                <div className="text-white w-[70%] h-[200px] bg-[#91C53F] rounded-[45px] ">
-                    <h1 className="ml-[100px] font-playfire text-3xl mt-10">React Reveal</h1>
-                    <p className="ml-[100px] max-w-[600px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus deserunt magnam, amet quis ut aliquid, nostrum illum esse aliquam optio ducimus eius. Culpa temporibus dolore molestias voluptatum eaque consequatur!
+                <div className="text-white w-[70%] h-[200px] bg-[#91C53F] rounded-[45px] ml-[-50px] grid grid-cols-3 grid-rows-2 gap-1 ">
+                    <h1 className="ml-[100px] mt-[25px] font-playfire text-3xl col-span-2">React Reveal</h1>
+                    <p className="ml-[100px] mt-[-20px] max-w-[750px] col-span-2 col-start-1 row-start-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus deserunt magnam, amet quis ut aliquid, nostrum illum esse aliquam optio ducimus eius. Culpa temporibus dolore molestias voluptatum eaque consequatur!
                     Deleniti voluptas </p>
-                   
+                    <img className="row-span-2 col-start-3 row-start-1 w-[225px] h-[225px] mt-[-10px] ml-[35px]" src="./Battery.png" alt="battery" />
                 </div>
             </Slide>
             <div className="h-[70px] bg-white w-[5px]" />
@@ -29,7 +29,7 @@ const Sld = () => {
             </Slide>
             <div className="h-[70px] bg-white w-[5px]" />
             <Slide left>
-                <div className="w-[70%] h-[200px] bg-[#3C7339] rounded-[45px] ml-[-50px]">
+                <div className="w-[70%] h-[200px] bg-[#558231] rounded-[45px] ml-[-50px]">
                     <h1>React Reveal</h1>
                 </div>
             </Slide>
