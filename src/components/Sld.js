@@ -12,9 +12,9 @@ const Sld = () => {
         </Slide>
         <br />
             <Slide left>
-                <div className="text-white w-[70%] h-[200px] bg-[#91C53F] rounded-[45px] ml-[-50px]">
-                    <h1 className="ml-[100px] font-playfire text-3xl">React Reveal</h1>
-                    <p className="ml-[100px] max-w-[700px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus deserunt magnam, amet quis ut aliquid, nostrum illum esse aliquam optio ducimus eius. Culpa temporibus dolore molestias voluptatum eaque consequatur!
+                <div className="text-white w-[70%] h-[200px] bg-[#91C53F] rounded-[45px] ">
+                    <h1 className="ml-[100px] font-playfire text-3xl mt-10">React Reveal</h1>
+                    <p className="ml-[100px] max-w-[600px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus deserunt magnam, amet quis ut aliquid, nostrum illum esse aliquam optio ducimus eius. Culpa temporibus dolore molestias voluptatum eaque consequatur!
                     Deleniti voluptas </p>
                    
                 </div>
