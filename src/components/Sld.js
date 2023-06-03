@@ -22,8 +22,10 @@ const Sld = () => {
             <div className="h-[70px] bg-white w-[5px]" />
             <Slide right className=" ">
             <div className="flex justify-end">
-                <div className="w-[70%] h-[200px] bg-[#7CAA29] rounded-[45px] mr-[-50px]">
-                     <h1>React Reveal</h1>
+                <div className="w-[70%] h-[200px] bg-[#7CAA29] rounded-[45px] mr-[-50px] grid grid-cols-3 grid-rows-2 gap-2">
+                    <img className="row-span-2 w-[225px] h-[200px]" src="./clothes.png" alt="" />
+                     <h1 className="col-span-2 flex justify-end mr-[100px] items-center text-3xl text-white font-playfire">React Reveal</h1>
+                     <p className="col-span-2 col-start-2 row-start-2 mr-[100px] justify-end flex items-center">amogus</p>
                 </div>
             </div>
             </Slide>
