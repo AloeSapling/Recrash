@@ -2,6 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
 
 
+
+.leaf1{
+    position: absolute;
+    transform: rotate(290deg);
+    top: 100%;
+    left: 5%;
+}
+
+.leaf2{
+    position: absolute;
+    transform: rotate(170deg);
+    top: 115%;
+    left: 30%;
+}
+
+.leaf3{
+    position: absolute;
+    transform: rotate(280deg);
+    left: 15%;
+}
+
+.leaf4{
+    position: absolute;
+    left: 3%;
+    top: 185%;
+    transform: rotate(200deg);
+}
+
 .image{
     width: 100%;
     height: 800px;
