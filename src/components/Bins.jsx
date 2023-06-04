@@ -1,5 +1,7 @@
 import React from "react";
+import { useRef  } from "react";
 import { GeoJSON } from "react-leaflet";
+import Map from '../components/map'
 const overpass = require("query-overpass");
 
 export default class Castles extends React.Component {
@@ -9,15 +11,16 @@ export default class Castles extends React.Component {
       geojson: undefined
     };
   }
-
-  componentDidMount() {
-    const query = `[out:json];(way[amenity=recycling](around:10000, 50.0874654,14.4212535);\
-                              relation[amenity=recycling](around:10000, 50.0874654,14.4212535););\
-                              out body;>;out skel qt;`;
+  componentDidMount({}) {
+    const position = [50.049683,    19.944544];
+    const query = "[out:json];(way[amenity=recycling](around:99999, ${position});\
+                              relation[amenity=recycling](around:99999, ${position}););\
+                              out body;>;out skel qt;";
     const options = {
       flatProperties: true,
       overpassUrl: 'https://overpass-api.de/api/interpreter'
     };
+
     overpass(query, this.dataHandler, options);
   }
 
@@ -28,6 +31,6 @@ export default class Castles extends React.Component {
   };
 
   render() {
-    return this.state.geojson ? <GeoJSON data={this.state.geojson} /> : null;
+     return this.state.geojson ? <GeoJSON data={this.state.geojson}  /> : null;
   }
 }
