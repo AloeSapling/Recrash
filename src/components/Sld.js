@@ -1,5 +1,6 @@
 import React from "react";
 import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 
 import "./hero.css"
 
@@ -8,9 +9,6 @@ const Sld = () => {
     return ( 
         <>   
         
-        <img className="leaf1" src="./leafnobg.png" alt="" />
-        <img className="leaf2" src="./leafnobg.png" alt="" />
-
         <Slide top>   
         <div className="w-[100%]">
             <h1 className="flex justify-center mb-[50px] text-[70px] font-bold text-[#3C7339] font-playfire ">Dowiedź się więcej o odpadach</h1>
@@ -25,8 +23,7 @@ const Sld = () => {
                     <img className="row-span-2 col-start-3 row-start-1 w-[225px] h-[225px] mt-[-10px] ml-[35px]" src="./Battery.png" alt="battery" />
                 </div>
             </Slide>
-            <img className="leaf3" src="./leafnobg.png" alt="" />
-            <img className="leaf4" src="./leafnobg.png" alt="" />
+          
             <div className="h-[70px] bg-white w-[5px]" />
             <Slide right className=" ">
             <div className="flex justify-end">
