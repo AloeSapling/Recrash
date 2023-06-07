@@ -11,8 +11,9 @@ export default class Castles extends React.Component {
   }
 
   componentDidMount() {
-    const query = `[out:json];(way[amenity=recycling](around:10000, 50.0874654,14.4212535);\
-                              relation[amenity=recycling](around:10000, 50.0874654,14.4212535););\
+   const position = [50.049683,	19.944544];
+    const query = `[out:json];(way[amenity=recycling](around:99999, ${position});\
+                              relation[amenity=recycling](around:99999, ${position}););\
                               out body;>;out skel qt;`;
     const options = {
       flatProperties: true,
