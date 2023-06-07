@@ -1,5 +1,6 @@
 import Hero from './Hero';
 import Navbar from './Navbar';
+import Leafs_and_clouds from './Leafs_and_clouds';
 
 import '../css/home.css'
 import Sld from './Sld.js';
@@ -10,6 +11,7 @@ function Home() {
        <div className='main'>
          <Hero/>
          <Sld />
+        
        </div>
     </div>
   );

@@ -8,6 +8,12 @@ import '../css/home.css';
 import '../css/map.css';
 import { render } from "@testing-library/react";
 import Castles from "./Bins";
+<<<<<<< HEAD
+=======
+
+
+const overpass = require("query-overpass");
+>>>>>>> 0f24059d9db426a3f588f8c32b04b8b6cbba26d5
 
 
 const overpass = require("query-overpass");

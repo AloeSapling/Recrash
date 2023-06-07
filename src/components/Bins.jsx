@@ -11,11 +11,12 @@ export default class Castles extends React.Component {
       geojson: undefined
     };
   }
-  componentDidMount({}) {
-    const position = [50.049683,    19.944544];
-    const query = "[out:json];(way[amenity=recycling](around:99999, ${position});\
+
+  componentDidMount() {
+   const position = [50.049683,	19.944544];
+    const query = `[out:json];(way[amenity=recycling](around:99999, ${position});\
                               relation[amenity=recycling](around:99999, ${position}););\
-                              out body;>;out skel qt;";
+                              out body;>;out skel qt;`;
     const options = {
       flatProperties: true,
       overpassUrl: 'https://overpass-api.de/api/interpreter'
