@@ -9,11 +9,11 @@ const Sld = () => {
     return ( 
         <>   
         
-        <Slide top>   
+      
         <div className="w-[100%]">
             <h1 className="flex justify-center mb-[50px] text-[70px] font-bold text-[#3C7339] font-playfire ">Dowiedź się więcej o odpadach</h1>
         </div>
-        </Slide>
+        
         <br />
             <Slide left>
                 <div className="text-white w-[70%] h-[200px] bg-[#91C53F] rounded-[45px] ml-[-50px] grid grid-cols-3 grid-rows-2 gap-1 ">
@@ -29,7 +29,7 @@ const Sld = () => {
             <div className="flex justify-end">
                 <div className="w-[70%] h-[200px] bg-[#7CAA29] rounded-[45px] mr-[-50px] grid grid-cols-3 grid-rows-2 gap-2">
                     <img className="row-span-2 w-[225px] h-[200px] ml-[65px] mb-[120px]" src="./clothes.png" alt="" />
-                     <h1 className="col-span-2 flex justify-end mr-[110px] items-center text-3xl text-white font-playfire">React Reveal</h1>
+                     <h1 className="col-span-2 flex justify-end mr-[110px] mt-[25px] text-3xl text-white font-playfire">React Reveal</h1>
                      <p className="col-span-2 col-start-2 row-start-2 mr-[100px] mt-[-40px] text-white text-right justify-end flex items-center max-w-[600px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus debitis vel illo at. Vitae, atque odio optio, nobis fugit odit libero commodi officia nesciunt corrupti, iste voluptate quidem! Autem, assumenda?
                      Unde quisquam ipsa eveniet nihil eius eligendi distinctio</p>
                 </div>

@@ -5,9 +5,10 @@ import React from 'react';
 const Leafs_and_clouds = () => {
     return ( 
         <>
-        <Zoom>
-            <img className='' src="./leafnobg.png" alt="" />
-        </Zoom>
+        
+            <img className='mt-[-960px] rotate-[200deg]' src="./leafnobg.png" alt="" />
+            <img className='mt-[-100px] ml-[1100px] rotate-[290deg]' src="./leafnobg.png" alt="" />
+        
         </>
      );
 }

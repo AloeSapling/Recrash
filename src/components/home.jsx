@@ -11,7 +11,7 @@ function Home() {
        <div className='main'>
          <Hero/>
          <Sld />
-        
+         <Leafs_and_clouds />
        </div>
     </div>
   );

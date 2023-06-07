@@ -11,9 +11,6 @@ import Castles from "./Bins";
 
 
 const overpass = require("query-overpass");
-
-
-const overpass = require("query-overpass");
 function Map() {
   
   const center = [50.049683,	19.944544]
