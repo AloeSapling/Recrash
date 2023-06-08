@@ -3,6 +3,7 @@ import About from './components/about';
 import Home from './components/home';
 import Map from './components/map'
 import Navbar from './components/Navbar';
+import Footer from './components/footer';
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <Route path='/about' element={<About/>} />
     <Route path='/map' element={<Map/>} />
   </Routes>
+  <Footer />
   </>
   );
 }

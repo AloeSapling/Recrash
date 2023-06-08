@@ -5,6 +5,7 @@ import { GeoJSON } from "react-leaflet";
 import 'leaflet/dist/leaflet.css';
 import { latLng } from "leaflet";
 const overpass = require("query-overpass");
+<<<<<<< HEAD
 
 // const MyMarker = props => {
 //   const initMarker = ref => {
@@ -28,6 +29,9 @@ const overpass = require("query-overpass");
 
 
 function Mapa() {
+=======
+function Map() {
+>>>>>>> 51c5e21ad311385ee4f441f8d37e1f1be57496a4
   
 
   const [lat , setLat] = useState()
