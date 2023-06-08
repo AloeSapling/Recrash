@@ -10,7 +10,7 @@ const Sld = () => {
         <>   
         
       
-        <div className="w-[100%]">
+        <div className="w-[100%] ">
             <h1 className="flex justify-center mb-[50px] text-[70px] font-bold text-[#3C7339] font-playfire ">Dowiedź się więcej o odpadach</h1>
         </div>
         
@@ -37,7 +37,7 @@ const Sld = () => {
             </Slide>
             <div className="h-[70px] bg-white w-[5px]" />
             <Slide left>
-                <div className=" bg-[#558231] text-white w-[70%] h-[200px] rounded-[45px] ml-[-50px] grid grid-cols-3 grid-rows-2 gap-1 ">
+                <div className=" bg-[#558231] text-white w-[70%] h-[200px] rounded-[45px] ml-[-50px] grid grid-cols-3 grid-rows-2 gap-1 mb-[200px]">
                 <h1 className="ml-[100px] mt-[25px] font-playfire text-3xl col-span-2">React Reveal</h1>
                     <p className="ml-[100px] mt-[-20px] max-w-[750px] col-span-2 col-start-1 row-start-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minus deserunt magnam, amet quis ut aliquid, nostrum illum esse aliquam optio ducimus eius. Culpa temporibus dolore molestias voluptatum eaque consequatur!
                     Deleniti voluptas </p>
