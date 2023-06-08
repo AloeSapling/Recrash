@@ -2,6 +2,7 @@ import React from "react";
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 
+
 import "./hero.css"
 
 
@@ -9,11 +10,11 @@ const Sld = () => {
     return ( 
         <>   
         
-      
-        <div className="w-[100%] ">
-            <h1 className="flex justify-center mb-[50px] text-[70px] font-bold text-[#3C7339] font-playfire ">Dowiedź się więcej o odpadach</h1>
-        </div>
-        
+        <Fade top>
+            <div className="w-[100%] ">
+                <h1 className="flex justify-center mb-[50px] text-[70px] font-bold text-[#3C7339] font-playfire ">Dowiedź się więcej o odpadach</h1>
+            </div>
+        </Fade>
         <br />
             <Slide left>
                 <div className="text-white w-[70%] h-[200px] bg-[#91C53F] rounded-[45px] ml-[-50px] grid grid-cols-3 grid-rows-2 gap-1 ">
