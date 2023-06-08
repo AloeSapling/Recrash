@@ -1,82 +1,109 @@
-import React from "react";
-import { useState, useMemo, useCallback,useEffect } from "react";
-import { MapContainer, TileLayer, Marker } from "react-leaflet";
-import Bins from "./Bins";
-import 'leaflet/dist/leaflet.css';
+import React, { Component, useState } from "react";
+import {MapContainer, TileLayer, Popup, Marker, withLeaflet, useMapEvents} from "react-leaflet";
+import '../css/map.css'
 import { GeoJSON } from "react-leaflet";
-import '../css/home.css';
-import '../css/map.css';
-import { render } from "@testing-library/react";
-import Castles from "./Bins";
-
-
+import 'leaflet/dist/leaflet.css';
+import { latLng } from "leaflet";
 const overpass = require("query-overpass");
+<<<<<<< HEAD
+
+// const MyMarker = props => {
+//   const initMarker = ref => {
+//     if (ref) {
+//       ref.leafletElement.openPopup()
+//     }
+//   }
+
+//   return <Marker ref={initMarker} {...props}/>
+// }
+
+
+// const LocationFinderDummy = () => {
+//   const map = useMapEvents({
+//       click(e) {
+//           this.setState({currentPos})
+//       },
+//   });
+//   return null;  
+// };
+
+
+function Mapa() {
+=======
 function Map() {
+>>>>>>> 51c5e21ad311385ee4f441f8d37e1f1be57496a4
   
-  const center = [50.049683,	19.944544]
-  const zoom = 13
-  
-  function DisplayPosition({ map, propsd}) {
-    const [position, setPosition] = useState(() => map.getCenter())
-  
-    const onClick = useCallback(() => {
-      map.setView(center, zoom)
-    }, [map])
-  
-    const onMove = useCallback(() => {
-      setPosition(map.getCenter())
-    }, [map])
-  
-    useEffect(() => {
-      map.on('move', onMove)
-      return () => {
-        map.off('move', onMove)
+
+  const [lat , setLat] = useState()
+  const [lng , setLng] = useState()
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     currentPos: null
+  //   };
+  //   this.handleClick = this.handleClick.bind(this);
+  // }
+
+   const LocationFinderDummy = () => {
+    const map = useMapEvents({
+        click(e) {
+            console.log(e.latlng);
+            setLat(e.latlng.lat)
+            setLng(e.latlng.lng)
+            console.log(lat, lng)
+        },
+    });
+    return null;  
+  };
+    console.log([lat,lng]);
+
+    class Bins extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          geojson: undefined
+        };
       }
-    }, [map, onMove])
-  
-    return (
-      <p>
-        latitude: {position.lat.toFixed(4)}, longitude: {position.lng.toFixed(4)}{' '};
-        ${ console.log(position) }
-        <button onClick={onClick}>reset</button>
-      </p>
-    )
-  }
-  
-  function Cords(position){
-    const cords = [position.lat , position.lng]
-    console.log(cords);
-  }
-  
-  
-  
-  function ExternalStateExample() {
-    const [map, setMap] = useState(null)
-    const displayMap = useMemo(
-      () => (
-        <MapContainer
-        className="map"
-          center={center}
-          zoom={zoom}
-          ref={setMap}>
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          <Bins/>
-        </MapContainer>
-      ),
-      [],
-    )
+    
+      componentDidMount() {
+        const query = ` [out:json];(way[amenity=recycling](around:99999, ${[lat , lng]});\
+        relation[amenity=recycling](around:99999, ${[lat , lng]}););
+        out body;>;out skel qt;`;
         
         
+        const options = {
+          flatProperties: true,
+          overpassUrl: 'https://overpass-api.de/api/interpreter'
+        };
+        overpass(query, this.dataHandler, options);
+      }
+    
+      dataHandler = (error, osmData) => {
+        if (!error && osmData.features !== undefined) {
+          this.setState({ geojson: osmData });
+        }
+      };
+    
+      render() {
+        return this.state.geojson ? <GeoJSON data={this.state.geojson} /> : null;
+      }
+    }
+
     return (
       <div>
-        {map ? <DisplayPosition map={map} /> : null}
-        {displayMap}
+        <MapContainer className="map" zoom={8} center={{ lat: 51.5287718, lng: -0.2416804 }} >
+          <TileLayer
+              url='https://{s}.tile.osm.org/{z}/{x}/{y}.png'
+          />
+          <LocationFinderDummy/>
+          <Bins/>
+
+        </MapContainer>
       </div>
     )
-  }
-  render(<ExternalStateExample/>, <Castles/> )
+
+
 }
-export default Map;
+
+
+export default Mapa;

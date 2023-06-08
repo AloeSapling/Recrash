@@ -13,7 +13,7 @@ export default class Castles extends React.Component {
   }
 
   componentDidMount() {
-   const position = [50.049683,	19.944544];
+   const position = [this.props.lat, this.props.lng];
     const query = `[out:json];(way[amenity=recycling](around:99999, ${position});\
                               relation[amenity=recycling](around:99999, ${position}););\
                               out body;>;out skel qt;`;
