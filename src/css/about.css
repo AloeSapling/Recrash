@@ -1,5 +1,5 @@
 .section{
-    height: 70vh;
+    height: 100vh;
     background-image: linear-gradient(to bottom, #71AC57, #426932);
     display: flex;
     align-items: center;
@@ -15,6 +15,12 @@
 }
 .about{
     font-size:2rem;
-    font-family: 'roboto', cursive;
+    font-family: 'roboto', cursive; 
     font-weight: 700;
 }
+
+@media screen and (max-width: 850px) {
+    .about {
+      font-size: 1.5rem ;
+    }
+  }
