@@ -9,3 +9,9 @@
       font-family: 'Merriweather', serif;
     }
   }
+  body{
+    min-height: 100vh;
+}
+#root{
+  min-height: 100vh;
+}

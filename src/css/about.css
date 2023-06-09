@@ -1,4 +1,20 @@
-.test{
-    color: white;
+.section{
+    height: 70vh;
+    background-image: linear-gradient(to bottom, #71AC57, #426932);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12vw 12vh
+}
+.aboutmain{
+    border-radius: 30px;
+    border: none;
+    background-color: palegreen;
     text-align: center;
+    padding: 4%;
+}
+.about{
+    font-size:2rem;
+    font-family: 'roboto', cursive;
+    font-weight: 700;
 }

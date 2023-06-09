@@ -15,9 +15,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full">
+    <nav className="w-full h-24 mx-auto">
       <div className="bg-[#71AC57] flex justify-between items-center h-24 mx-auto px-4 text-white z-50 fixed w-full">
-        <img className="w-[243px] h-[85px]" src="./Recrash.png" alt="" />
+        <Link to="/" onClick={handleClick}><img className="w-[243px] h-[85px]" src="./Recrash.png" alt="" /></Link>
         <ul className="hidden md:flex">
           <Link to="/" onClick={handleClick}>
             <li className="p-4 mr-10 text-3xl font-bold cursor-pointer hover:text-[#38761D]"> Home </li>
