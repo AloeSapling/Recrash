@@ -18,3 +18,9 @@
     font-family: 'roboto', cursive;
     font-weight: 700;
 }
+
+@media screen and (max-width: 850px) {
+    .about {
+      font-size: 1.5rem ;
+    }
+  }
