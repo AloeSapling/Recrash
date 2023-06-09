@@ -16,6 +16,7 @@
     "@testing-library/user-event": "^13.5.0",
     "buffer": "^6.0.3",
     "framer-motion": "^10.12.16",
+    "leaflet-geosearch": "^3.8.0",
     "maath": "^0.6.0",
     "query-overpass": "^1.5.5",
     "querystring": "^0.2.1",
