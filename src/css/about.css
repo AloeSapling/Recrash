@@ -1,6 +1,6 @@
 .section{
     min-height: 80vh;
-    background-image: linear-gradient(to bottom, #71AC57, #426932);
+    background-image: linear-gradient(to bottom, #71AC57, #36723e);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +8,7 @@
 .aboutmain{
     border-radius: 30px;
     border: none;
-    background-color: palegreen;
+    background-color: rgb(128, 240, 128);
     text-align: center;
     padding: 4%;
     margin: 3%;

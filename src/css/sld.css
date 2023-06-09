@@ -1,0 +1,5 @@
+.gra{
+    background-color: rgba(73, 195, 0, 1);
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgb(185, 238, 174) 15%, #36723e 100%);
+    padding-bottom: 5%;
+}

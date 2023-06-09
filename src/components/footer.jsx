@@ -4,7 +4,7 @@ import '../css/footer.css'
 const Footer = () => {
     return ( 
         <>
-        <footer className="bg-[#71AC57] rounded-lg shadow dark:bg-gray-900 m-4 fo">
+        <footer className=" rounded-lg shadow dark:bg-gray-900 m-4 fo">
     <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         
             <ul class="flex items-center justify-center flex-wrap text-white">
