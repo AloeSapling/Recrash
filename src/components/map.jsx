@@ -7,6 +7,7 @@ import { GeoJSON } from "react-leaflet";
 import 'leaflet/dist/leaflet.css';
 import { latLng } from "leaflet";
 import { OpenStreetMapProvider, GeoSearchControl } from "leaflet-geosearch"
+import Text from './Text.jsx'
 const overpass = require("query-overpass");
 
 
@@ -90,6 +91,7 @@ function Mapa() {
 
     return (
       <div>
+        <Text/>
         <MapContainer maxBounds={mapBounds} className="map" zoom={8} center={{ lat: 51.5287718, lng: -0.2416804 }} >
           <TileLayer
               url='https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png'

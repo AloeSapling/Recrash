@@ -1,0 +1,9 @@
+.textContainer{
+    background: #59a55d;
+    z-index: 100000000000;
+    padding: 0.5%;
+}
+.textContainer>p{
+    font-size: 120%;
+    color: #fff;
+}

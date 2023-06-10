@@ -30,11 +30,11 @@ const Hero = () => {
         src="./eco img.jpg"
         alt=""
       /> 
-      <h1 className="text1">Sprawdź gdzie</h1>
-      <p className="text2">musisz wyrzucić &nbsp; 
+      <h1 className="text1 font-medium">Sprawdź gdzie</h1>
+      <p className="text2 font-medium">możesz wyrzucić &nbsp; 
       <span className="span-text" ref={el}></span>
       </p>
-      <p className="text3">Na naszej stronie zobaczysz gdzie warto wyrzucać różne odpady w twoim mieście </p>
+      <p className="text3 font-medium">Na naszej stronie zobaczysz gdzie warto wyrzucać różne odpady w twoim mieście </p>
       </div>
       
       <div className="dot"/>
